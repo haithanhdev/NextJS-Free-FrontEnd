@@ -2,7 +2,7 @@ import ButtonRedirect from "@/app/components/ButtonRedirect";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-const isAuth = false;
+const isAuth = true;
 export default function Home() {
   if (!isAuth) {
     redirect("/login");
